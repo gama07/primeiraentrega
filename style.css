@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+ 
+*
+body {
+  background-color: black;
+  margin: 0; /* Defina a margem do corpo como 0 para remover o espaço em branco padrão ao redor da página */
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+.section {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+}
+
+
+
+.promo-button:hover,
+.home-button:hover,
+.social-link:hover {
+    background-color: #1b928a;
+}
+/* Navbar Start */
+#navbar {
+    background: black;
+}
+
+#logo {
+    font-size: 2.0rem;
+    font-weight: bolder;
+    color:white;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color:#29d9d5;;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: #29d9d5;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #29d9d5;
+    color: black;
+}
+
+#navbar form button {
+    background: #29d9d5;
+    color: white;
+   border: none;
+
+}
+
+
+
+
+
+/* Navbar End */
+
+/* Home Section Start */
+.home { 
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./img/caucasus-g42eb4b76c_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 85%;
+    margin-bottom: 10px;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5 {
+    color: white;
+    font-size: 40px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1 { 
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #29d9d5;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+   
+    20%{content: "Maldivas";}
+    30%{content: "Hong Kong";}
+    40%{content: "Taj Mahal";}
+    50%{content: "Machu Picchu";}
+    60%{content: "Santorini";}
+    70%{content: "Aurora Boreal";}
+    
+} 
+.home-btn {
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+  .home-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #29d9d5;
+    color: white;
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.home-btn a:hover {
+    background-color: white;
+    color: #29d9d5;
+}
+.home-button {
+    background-color: #29d9d5;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .home-button:hover {
+    background-color: transparent;
+    color: #29d9d5;
+  }
+
+.home .content p {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a {
+    padding: 10px;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background:black;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px) { 
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}    
+    /* Home Section end */
+
+    /*Section passagens start*/
+.home{
+   
+ width: 100%;
+ height: 100vh;
+ background-image: url(./img/caucasus-g42eb4b76c_1280.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: 85%;
+}
+.home .main-text{
+    text-align: center;
+    padding: 200px 10% 10px;
+}
+.book .rom input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.main-text h3{
+    font-size: 50px;
+    color: #f4f5fb;
+    text-shadow: 0px 0px 1px black;
+}
+.home .main-text p{
+    color: black;
+    margin-top: 5px;
+}
+#home-btn{
+    margin-top: 20px;
+    padding: 6px;
+    background: black;
+    color: #f4f5fb;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#home-btn2{
+    margin-left: 10px;
+    padding: 5px;
+    background: #f4f5fb;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#home-btn2:hover{
+    transform: translateY(-3px);
+}
+@media (max-width:1300px){
+    .main-text{
+        padding: 200px 10% 10px;
+    }
+}
+@media (max-width:920px){
+    .home .main-text h3{
+        font-size: 40px;
+    }
+}
+@media (max-width:500px){
+    .home .main-text h3{
+        font-size: 30px;
+    }
+}
+/* section passagens End */
+
+/* Section Book Start */ 
+
+.book {
+    background-color: black;
+    padding: 50px 0;
+    margin-bottom: 0;
+  }
+  
+  .book .main-txt {
+    text-align: center;
+  }
+  
+  .passagens-title {
+    color: white;
+  }
+  
+  .book .card {
+    border: 5px solid white;
+    border-radius: 15px;
+  }
+  
+  .book img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .passagens-form {
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .passagens-form input,
+  .passagens-form textarea {
+    background-color: black;
+    color: #29d9d5;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    transition: all 0.3s;
+  }
+  
+  .passagens-form textarea {
+    color: #29d9d5;
+  }
+  
+  .passagens-form input:hover,
+  .passagens-form textarea:hover {
+    color: white;
+  }
+  
+  .passagens-form button {
+    border-radius: 10px;
+    background-color: #29d9d5;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .passagens-form button:hover {
+    background-color: #1b1b1b;}
+  
+/* Section Book End */
+
+/* Packages / Destinos Start */
+.packages {
+    padding: 50px 0 0;
+    margin-bottom: 0;
+    background-color: black;
+  }
+  
+  .packages .main-txt h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: white;
+  }
+  
+  .packages .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .packages .col-md-4 {
+    flex-basis: calc(33.333333% - 20px);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .packages .card {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden; /* Adiciona um overflow para garantir que as imagens não extrapolem os limites do card */
+  }
+  
+  .packages .card img {
+    width: 100%;
+    height: 250px; /* Defina uma altura fixa maior para manter a proporção quadrada */
+    object-fit: cover;
+  }
+  
+  .packages .card .card-body {
+    background: #29d9d5;
+    padding: 15px;
+  }
+  
+  .packages .card-body h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .packages .card-body p {
+    font-size: 15px;
+    color: black;
+  }
+  
+  .packages .card-body a {
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    background: #29d9d5;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 550;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .packages .card-body a:hover {
+    background-color: #1b928a;
+  }
+  
+  /* Botões na seção de destinos */
+  .packages .book form input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .packages .book form input[type="submit"]:hover {
+    background-color: #1b928a;
+  }
+  
+  @media (max-width: 992px) {
+    .packages .col-md-4 {
+      flex-basis: calc(50% - 20px); /* Agora 2 colunas por linha */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .packages .col-md-4 {
+      flex-basis: 100%; /* Agora 1 coluna por linha */
+    }
+  }
+  /* Section Packages End */
+
+/* Botões na seção Promoções */
+.promoções {
+    padding: 0; 
+    margin-bottom: 0;
+    background-color: black;
+  }
+
+.promoções .main-tex h1{
+    color:white;
+}
+.promoções .main-tex  p{
+    color: white;
+
+}
+
+.promoções .main-tex h3{
+    color: white;
+}
+.promoções .main-tex  h6{
+    color: white;
+}
+
+.promoções .card{
+    background-color: black;
+}
+.book form input[type="submit"],
+.promoções .card-body a {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 550;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.promoções .card-body h3{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+}
+
+.promoções  .card-body h6{
+    font-size: 20px;
+    color: black;}
+.book form input[type="submit"]:hover,
+.promoções .card-body a:hover {
+  background-color: #1b928a;
+}
+
+
+
+/* Gallery Section Start */
+.gallery{
+    background-color: black;
+    padding: 0%;
+    margin: 0;
+}
+
+.gallery{
+    padding: 160px 10% 120px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+.gallery .heading h3{
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: white;
+    border-bottom: 2px solid #29d9d5;
+}
+.gallery-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    align-items: center;
+    gap: 0.90rem;
+    margin-top: 30px;
+}
+.gallery-card .row img{
+    width: 200px;
+    padding: 10px;
+    display: block;
+    border-radius: 15px;    
+    transition: 0.5s;
+    cursor: pointer;
+}
+.gallery-card .row img:hover{
+    transform: translateY(-10px);
+}
+@media (max-width:920px){
+    .gallery-card{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
+/* Gallary Section End */
+
+
+/* About Start */
+.about{
+    padding:  0;
+    margin-top: 0;
+    background-color: black;
+    color: white;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white
+}
+.about p{
+    font-weight: 500;
+    color: white;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #29d9d5;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+/* About End */
+
+
+.contact-page {
+  background: #000;
+}
+
+/* Footer Start */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;  
+  }
+  .main-txt text-center{
+    background-color: black;
+
+  }
+.social-icon {
+    margin: 10px;
+    color: #29d9d5;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #1b928a;
+  }
+  
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin-top: 0;
+  }
+  
+  .main-txt {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .main-txt h1 {
+    color: white;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-item {
+    margin: 10px;
+    font-size: 16px;
+    color: #29d9d5;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .contact-item i {
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+
+  
+  .credits {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .credits p {
+    margin: 5px 0;
+  }
+  
+.contact-item:hover,
+.other-links li a:hover {
+  color: #1b928a;
+}
